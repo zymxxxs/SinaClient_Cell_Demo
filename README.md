@@ -18,6 +18,9 @@
 * iOS 7
 * ARC
 
+## 备注
+使用前你需要在TTIClientConfig.h中替换SINA_APP_KEY、SINA_APP_SECRET和SINA_REDIRECT_URL三个参数。
+
 
 附：目前内存有些问题。
 
