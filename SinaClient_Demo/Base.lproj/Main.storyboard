@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GAO-XL-iBb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="OAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSq-eL-Aza">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rW-Rw-qCu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="bGa-SS-sk2"/>
+                                </constraints>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="新浪微博授权" id="Qfp-Gb-Lsn"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cSq-eL-Aza" secondAttribute="bottom" id="9Bk-Er-D8I"/>
+                            <constraint firstItem="5rW-Rw-qCu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="ABV-ra-j0w"/>
+                            <constraint firstItem="cSq-eL-Aza" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="C6K-dM-svW"/>
+                            <constraint firstAttribute="trailing" secondItem="cSq-eL-Aza" secondAttribute="trailing" id="DoM-cd-Roa"/>
+                            <constraint firstItem="5rW-Rw-qCu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Nd1-qR-7KW"/>
+                            <constraint firstAttribute="trailing" secondItem="5rW-Rw-qCu" secondAttribute="trailing" id="tcC-hY-v1N"/>
+                            <constraint firstItem="cSq-eL-Aza" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="uyq-r2-PvY"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="oauthWebView" destination="cSq-eL-Aza" id="iJ1-HQ-YvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="139"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="VtF-GG-nPM">
+            <objects>
+                <viewController id="Fht-Gq-WGY" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rp6-Mi-luO"/>
+                        <viewControllerLayoutGuide type="bottom" id="7y5-4K-6TF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ory-ag-dvp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ovu-at-Fgi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ovu-at-Fgi" secondAttribute="trailing" id="DHt-y2-5Oq"/>
+                            <constraint firstItem="ovu-at-Fgi" firstAttribute="top" secondItem="ory-ag-dvp" secondAttribute="top" id="PNZ-dB-2A6"/>
+                            <constraint firstItem="7y5-4K-6TF" firstAttribute="top" secondItem="ovu-at-Fgi" secondAttribute="bottom" id="SHx-dq-HGI"/>
+                            <constraint firstItem="ovu-at-Fgi" firstAttribute="leading" secondItem="ory-ag-dvp" secondAttribute="leading" id="oUo-w0-Rss"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PAZ-RG-RHT"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="ovu-at-Fgi" id="ZGb-x0-uQg"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="model" id="fRq-DZ-31r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhA-1Y-R1E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="841"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dlu-fr-GFA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GAO-XL-iBb" customClass="TTINavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pmI-Ca-oW1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fht-Gq-WGY" kind="relationship" relationship="rootViewController" id="w95-xf-hs4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0T-as-ctO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="841"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - JSONModel (1.0.2)
+  - Masonry (0.6.1)
+  - MBProgressHUD (0.9.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+  - SVProgressHUD (HEAD based on 1.1.2)
+  - TMCache (1.2.3)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger
+  - AFNetworking
+  - JSONModel
+  - Masonry
+  - MBProgressHUD
+  - SDWebImage
+  - SVProgressHUD (HEAD)
+  - TMCache
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: cdaa92ea0d544835babe0ba097e7806182d8f837
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
+  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
+  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
+  TMCache: 11589ef8c40909114a5e60132711c9a559e01d97
+
+COCOAPODS: 0.35.0
