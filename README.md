@@ -2,7 +2,7 @@
 一个关于新浪微博cell的小demo,自己集成label封装了一个RichLabel的类，可以自动识别@，##话题和Url，同时也支持点击。
 
 image<br>
-[![显示效果图](Images/screenshot_001.png)](Images/screenshot_002.jpg)
+[![显示效果图](images/screenshot_001.png)](Images/screenshot_002.jpg)
 </br>
 
 我在github找到了很多可以识别@，话题和url的优秀开源库，但自己的主要目的时学习，所以这次主要使用使用了textkit来做，用NSTextAttachment来做了表情。
