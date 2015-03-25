@@ -67,6 +67,7 @@
     [self addSubview:_contentLabel];
     
     self.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2f];
+    [self initLayoutConstraint];
 }
 
 -(void)updateConstraints

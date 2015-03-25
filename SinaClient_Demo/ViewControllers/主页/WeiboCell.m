@@ -48,6 +48,9 @@
     
     if (model.retweeted_status) {
 
+        //只是为了不出现恶心的警告
+        [_aboveStatusView initLayoutConstraint];
+        
         if (![self.contentView.constraints containsObject:_abouveStatusViewTopConstraint]) {
             [self.contentView addConstraint:self.abouveStatusViewTopConstraint];
         }
@@ -63,8 +66,7 @@
         if ([self.contentView.constraints containsObject:_contentLabelBottomConstraint]) {
             [self.contentView removeConstraint:_contentLabelBottomConstraint];
         }
-        //只是为了不出现恶心的警告
-        [_aboveStatusView initLayoutConstraint];
+
 
         self.aboveStatusView.hidden = NO;
         NSString *retweeted_statusText = [NSString stringWithFormat:@"@%@：%@",model.retweeted_status.user.screen_name,model.retweeted_status.text];
@@ -72,6 +74,10 @@
         
     }else
     {
+        
+        //只是为了不出现恶心的警告
+        [_aboveStatusView removeLayoutConstraint];
+        
         if ([self.contentView.constraints containsObject:_abouveStatusViewTopConstraint]) {
             [self.contentView removeConstraint:_abouveStatusViewTopConstraint];
         }
@@ -87,8 +93,7 @@
         if (![self.contentView.constraints containsObject:_contentLabelBottomConstraint]) {
             [self.contentView addConstraint:_contentLabelBottomConstraint];
         }
-        //只是为了不出现恶心的警告
-        [_aboveStatusView removeLayoutConstraint];
+
         
         self.aboveStatusView.hidden = YES;
         self.aboveStatusView.contentLabel.text = @"";

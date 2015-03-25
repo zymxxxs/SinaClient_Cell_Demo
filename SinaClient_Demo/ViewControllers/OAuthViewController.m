@@ -43,7 +43,7 @@
                 
             }];
         } failure:^(AFHTTPRequestOperation *operetion, id response) {
-            [[NSUserDefaults standardUserDefaults] setObject:[response objectForKey:@"access_token"] forKey:@"token"];
+            
             [self dismissViewControllerAnimated:YES completion:^{
                 
             }];
