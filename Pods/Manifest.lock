@@ -2,54 +2,63 @@ PODS:
   - AFNetworkActivityLogger (2.0.4):
     - AFNetworking/NSURLConnection (~> 2.0)
     - AFNetworking/NSURLSession (~> 2.0)
-  - AFNetworking (2.5.1):
-    - AFNetworking/NSURLConnection (= 2.5.1)
-    - AFNetworking/NSURLSession (= 2.5.1)
-    - AFNetworking/Reachability (= 2.5.1)
-    - AFNetworking/Security (= 2.5.1)
-    - AFNetworking/Serialization (= 2.5.1)
-    - AFNetworking/UIKit (= 2.5.1)
-  - AFNetworking/NSURLConnection (2.5.1):
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.1):
+  - AFNetworking/NSURLSession (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.1)
-  - AFNetworking/Security (2.5.1)
-  - AFNetworking/Serialization (2.5.1)
-  - AFNetworking/UIKit (2.5.1):
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - JSONModel (1.0.2)
-  - Masonry (0.6.1)
-  - MBProgressHUD (0.9.1)
-  - SDWebImage (3.7.1):
-    - SDWebImage/Core (= 3.7.1)
-  - SDWebImage/Core (3.7.1)
-  - SVProgressHUD (HEAD based on 1.1.2)
-  - TMCache (1.2.3)
+  - JGProgressHUD (1.3)
+  - Masonry (0.6.3)
+  - MJRefresh (2.4.11)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1.3)
+  - UITableView+FDTemplateLayoutCell (1.3)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger
   - AFNetworking
-  - JSONModel
+  - JGProgressHUD
   - Masonry
-  - MBProgressHUD
+  - MJRefresh
+  - ReactiveCocoa
   - SDWebImage
-  - SVProgressHUD (HEAD)
-  - TMCache
+  - SVProgressHUD
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
-  AFNetworkActivityLogger: cdaa92ea0d544835babe0ba097e7806182d8f837
-  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
-  JSONModel: cbdef0fdff1cc70e913a860861d3072860efd3a1
-  Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
-  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
-  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
-  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
-  TMCache: 11589ef8c40909114a5e60132711c9a559e01d97
+  AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  JGProgressHUD: a58f62d3afac173d201250c3ba628fe44bd67017
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  MJRefresh: b327947f35ab3eb16ca42646b26f7347e6aa7186
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.38.2

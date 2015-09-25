@@ -1,11 +1,11 @@
-
 platform :ios, '7.0'
 
 pod 'AFNetworking'
+pod 'SVProgressHUD'
 pod 'AFNetworkActivityLogger'
-pod 'MBProgressHUD'
-pod 'JSONModel'
+pod 'ReactiveCocoa'
 pod 'SDWebImage'
+pod 'JGProgressHUD'
+pod 'MJRefresh'
+pod 'UITableView+FDTemplateLayoutCell'
 pod 'Masonry'
-pod 'TMCache'
-pod 'SVProgressHUD', :head
