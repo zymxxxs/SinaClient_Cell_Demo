@@ -25,7 +25,7 @@
 * ARC
 
 ## 备注
-使用前你需要在TTIClientConfig.h中替换SINA\_APP\_KEY、SINA\_APP\_SECRET和SINA\_REDIRECT\_URL三个参数。
+使用前你需要在TTIClientConfig.h中替换SINA\_APP\_KEY、SINA\_APP\_SECRET和SINA\_REDIRECT\_URL三个参数(当然也可能不需要了)。
 
 
 
